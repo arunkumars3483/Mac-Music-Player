@@ -713,9 +713,12 @@
                             <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="D3p-88-UGS">
                                 <rect key="frame" x="40" y="610" width="653" height="20"/>
                             </progressIndicator>
-                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-hx-b3z">
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-hx-b3z" customClass="CustomPlayerSlider" customModule="Malayalam_Music" customModuleProvider="target">
                                 <rect key="frame" x="38" y="608" width="657" height="19"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" tickMarkPosition="above" sliderType="linear" id="QZt-Wz-Qcp"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" target="XfG-lQ-9wD" id="KeT-y2-nLl"/>
+                                </connections>
                             </slider>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M5w-rD-rUA">
                                 <rect key="frame" x="34" y="543" width="66" height="32"/>

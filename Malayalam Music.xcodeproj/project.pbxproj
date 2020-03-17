@@ -16,6 +16,7 @@
 		6E1F940F2420A64400C70687 /* Malayalam_MusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F940E2420A64400C70687 /* Malayalam_MusicUITests.swift */; };
 		6E1F941D2420CBCF00C70687 /* musicdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E1F941C2420CBCE00C70687 /* musicdata.json */; };
 		6E1F941F2420D08E00C70687 /* MusicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F941E2420D08E00C70687 /* MusicCellView.swift */; };
+		6E1F942124210F7200C70687 /* CustomPlayerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F942024210F7200C70687 /* CustomPlayerSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6E1F94102420A64400C70687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E1F941C2420CBCE00C70687 /* musicdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicdata.json; sourceTree = "<group>"; };
 		6E1F941E2420D08E00C70687 /* MusicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCellView.swift; sourceTree = "<group>"; };
+		6E1F942024210F7200C70687 /* CustomPlayerSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				6E1F93FA2420A64400C70687 /* Malayalam_Music.entitlements */,
 				6E1F93F12420A64300C70687 /* Malayalam_Music.xcdatamodeld */,
 				6E1F941E2420D08E00C70687 /* MusicCellView.swift */,
+				6E1F942024210F7200C70687 /* CustomPlayerSlider.swift */,
 			);
 			path = "Malayalam Music";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				6E1F93F32420A64300C70687 /* Malayalam_Music.xcdatamodeld in Sources */,
 				6E1F941F2420D08E00C70687 /* MusicCellView.swift in Sources */,
 				6E1F93EE2420A64300C70687 /* AppDelegate.swift in Sources */,
+				6E1F942124210F7200C70687 /* CustomPlayerSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

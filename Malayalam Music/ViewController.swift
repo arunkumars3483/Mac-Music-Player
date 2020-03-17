@@ -15,7 +15,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     @IBOutlet weak var playButton: NSButton!
     @IBOutlet weak var stopButton: NSButton!
     @IBOutlet weak var pauseButton: NSButton!
-    @IBOutlet weak var playerSlider: NSSlider!
+    @IBOutlet weak var playerSlider: CustomPlayerSlider!
     
     @IBOutlet weak var musicTableView: NSTableView!
     @IBOutlet weak var musicName: NSTextField!
@@ -28,6 +28,8 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     var timeObserver: Any?
     var currentIndex = 0
     var musicfiles:[Dictionary<String, Any>] = []
+    
+    var seekInitiated = false
     
     
     override func viewDidLoad() {
@@ -49,7 +51,6 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
         musicTableView.doubleAction = #selector(handleDoubleClick)
         
-        playerSlider.addObserver(<#T##observer: NSObject##NSObject#>, forKeyPath: <#T##String#>, options: <#T##NSKeyValueObservingOptions#>, context: <#T##UnsafeMutableRawPointer?#>)
 
     }
     
@@ -92,23 +93,27 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func updateSlider(elapsedTime: CMTime) {
-        let playerDuration = playerItemDuration()
-        if CMTIME_IS_INVALID(playerDuration) {
-            playerSlider.minValue = 0.0
-            return
+        if !playerSlider.isDragging{
+            let playerDuration = playerItemDuration()
+            if CMTIME_IS_INVALID(playerDuration) {
+                playerSlider.minValue = 0.0
+                return
+            }
+            
+            let duration = Float(CMTimeGetSeconds(playerDuration))
+            if duration.isFinite && duration > 0 {
+                
+                let now = Float(CMTimeGetSeconds(elapsedTime))
+                nowTime.stringValue = String(  Int((Int(now) % 3600) / 60)  ) + ":" + String( ( Int( (Int(now) % 3600) ) % 60) )
+                endTime.stringValue = String(  Int((Int(duration) % 3600) / 60)  ) + ":" +  String( ( Int( (Int(duration) % 3600) ) % 60) )
+                playerSlider.minValue = 0.0
+                playerSlider.maxValue = Double(duration)
+                let time = Float(CMTimeGetSeconds(elapsedTime))
+                playerSlider.doubleValue = Double(time)
+            }
         }
         
-        let duration = Float(CMTimeGetSeconds(playerDuration))
-        if duration.isFinite && duration > 0 {
-            
-            let now = Float(CMTimeGetSeconds(elapsedTime))
-            nowTime.stringValue = String(  Int((Int(now) % 3600) / 60)  ) + ":" + String( ( Int( (Int(now) % 3600) ) % 60) )
-            endTime.stringValue = String(  Int((Int(duration) % 3600) / 60)  ) + ":" +  String( ( Int( (Int(duration) % 3600) ) % 60) )
-            playerSlider.minValue = 0.0
-            playerSlider.maxValue = Double(duration)
-            let time = Float(CMTimeGetSeconds(elapsedTime))
-            playerSlider.doubleValue = Double(time)
-        }
+        
     }
     
     private func playerItemDuration() -> CMTime {
@@ -125,6 +130,25 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
     }
     
+    
+    
+    @IBAction func sliderValueChanged(_ sender: NSSlider) {
+        let event = NSApplication.shared.currentEvent
+
+        if event?.type == NSEvent.EventType.leftMouseUp {
+            if(player?.currentItem != nil){
+                
+                player?.pause()
+                
+                player?.seek(to: CMTime.init(seconds: playerSlider.doubleValue, preferredTimescale: .max))
+                
+                player?.play()
+                
+                playerSlider.isDragging = false
+            }
+            
+        }
+    }
     
     
     @IBAction func playButtonClicked(_ sender: Any) {
