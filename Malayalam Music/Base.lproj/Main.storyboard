@@ -825,7 +825,7 @@
                                 </scroller>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-Ta-rKF">
-                                <rect key="frame" x="126" y="675" width="106" height="19"/>
+                                <rect key="frame" x="164" y="675" width="106" height="19"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Now Playing: " id="qKx-Hf-h2d">
                                     <font key="font" metaFont="systemSemibold" size="16"/>
                                     <color key="textColor" red="0.18039215689999999" green="0.24313725489999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -833,7 +833,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-7M-CiO" userLabel="Music Name">
-                                <rect key="frame" x="248" y="675" width="61" height="19"/>
+                                <rect key="frame" x="286" y="675" width="61" height="19"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="No Song" id="uc7-Id-agW">
                                     <font key="font" size="16" name="GillSans"/>
                                     <color key="textColor" red="0.20784313730000001" green="0.21960784310000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -872,10 +872,10 @@
                             <constraint firstItem="d2T-wd-Bos" firstAttribute="leading" secondItem="8bA-hx-b3z" secondAttribute="leading" constant="2" id="H3z-JV-wBl"/>
                             <constraint firstItem="8bA-hx-b3z" firstAttribute="top" secondItem="d2T-wd-Bos" secondAttribute="bottom" constant="8" id="Jdy-a4-Bmk"/>
                             <constraint firstAttribute="bottom" secondItem="CtV-34-OYb" secondAttribute="bottom" constant="50" id="N3v-Ag-SbL"/>
+                            <constraint firstItem="cRg-7M-CiO" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-50" id="Qmi-oW-EGh"/>
                             <constraint firstItem="sjS-yZ-MJz" firstAttribute="trailing" secondItem="8bA-hx-b3z" secondAttribute="trailing" constant="-2" id="TaY-WH-hxE"/>
                             <constraint firstItem="M5w-rD-rUA" firstAttribute="top" secondItem="D3p-88-UGS" secondAttribute="bottom" constant="40" id="UKZ-c9-5gl"/>
                             <constraint firstItem="oeC-ys-Szr" firstAttribute="top" secondItem="D3p-88-UGS" secondAttribute="bottom" constant="40" id="Vah-lU-9KN"/>
-                            <constraint firstItem="bqf-Ta-rKF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="128" id="Vre-a9-aG0"/>
                             <constraint firstItem="cRg-7M-CiO" firstAttribute="bottom" secondItem="bqf-Ta-rKF" secondAttribute="bottom" id="YQQ-r3-bym"/>
                             <constraint firstItem="8bA-hx-b3z" firstAttribute="top" secondItem="D3p-88-UGS" secondAttribute="top" constant="4" id="c6c-mf-slb"/>
                             <constraint firstItem="oeC-ys-Szr" firstAttribute="trailing" secondItem="D3p-88-UGS" secondAttribute="trailing" id="pIB-ZV-gos"/>
