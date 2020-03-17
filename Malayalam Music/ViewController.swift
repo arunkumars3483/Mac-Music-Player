@@ -48,6 +48,9 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         musicTableView.dataSource = self
         
         musicTableView.doubleAction = #selector(handleDoubleClick)
+        
+        playerSlider.addObserver(<#T##observer: NSObject##NSObject#>, forKeyPath: <#T##String#>, options: <#T##NSKeyValueObservingOptions#>, context: <#T##UnsafeMutableRawPointer?#>)
+
     }
     
     override func viewWillAppear() {
@@ -55,12 +58,17 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func playMusic(url: String){
+        if(timeObserver != nil){
+            player?.removeTimeObserver(timeObserver)
+        }
+
+        
         let url = URL(string: url)
         print(url)
         let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
         player = AVPlayer(playerItem: playerItem)
         musicName.stringValue = (self.musicfiles[currentIndex]["name"] as! String) + " (" + (self.musicfiles[currentIndex]["album"] as! String) + ")"
-        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: playerItem)
         let interval = CMTime(seconds: 0.05, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
         timeObserver = player?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { elapsedTime in
             self.updateSlider(elapsedTime: elapsedTime)
@@ -68,6 +76,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     @objc func playerDidFinishPlaying() {
+        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
         if (currentIndex + 1) != self.musicfiles.count{
             currentIndex = currentIndex + 1
             playMusic(url: "https://mallusongsdownload.info" + (self.musicfiles[currentIndex]["url"] as! String))
@@ -115,6 +124,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             // Update the view, if already loaded.
         }
     }
+    
     
     
     @IBAction func playButtonClicked(_ sender: Any) {
