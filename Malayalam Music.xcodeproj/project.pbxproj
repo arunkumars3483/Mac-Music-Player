@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1F93EE2420A64300C70687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F93ED2420A64300C70687 /* AppDelegate.swift */; };
+		6E1F93F02420A64300C70687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F93EF2420A64300C70687 /* ViewController.swift */; };
+		6E1F93F32420A64300C70687 /* Malayalam_Music.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F93F12420A64300C70687 /* Malayalam_Music.xcdatamodeld */; };
+		6E1F93F52420A64400C70687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E1F93F42420A64400C70687 /* Assets.xcassets */; };
+		6E1F93F82420A64400C70687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1F93F62420A64400C70687 /* Main.storyboard */; };
+		6E1F94042420A64400C70687 /* Malayalam_MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F94032420A64400C70687 /* Malayalam_MusicTests.swift */; };
+		6E1F940F2420A64400C70687 /* Malayalam_MusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F940E2420A64400C70687 /* Malayalam_MusicUITests.swift */; };
+		6E1F941D2420CBCF00C70687 /* musicdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E1F941C2420CBCE00C70687 /* musicdata.json */; };
+		6E1F941F2420D08E00C70687 /* MusicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F941E2420D08E00C70687 /* MusicCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E1F94002420A64400C70687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E1F93E22420A64300C70687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E1F93E92420A64300C70687;
+			remoteInfo = "Malayalam Music";
+		};
+		6E1F940B2420A64400C70687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E1F93E22420A64300C70687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E1F93E92420A64300C70687;
+			remoteInfo = "Malayalam Music";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E1F93EA2420A64300C70687 /* Malayalam Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Malayalam Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1F93ED2420A64300C70687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E1F93EF2420A64300C70687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E1F93F22420A64300C70687 /* Malayalam_Music.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Malayalam_Music.xcdatamodel; sourceTree = "<group>"; };
+		6E1F93F42420A64400C70687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E1F93F72420A64400C70687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E1F93F92420A64400C70687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1F93FA2420A64400C70687 /* Malayalam_Music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Malayalam_Music.entitlements; sourceTree = "<group>"; };
+		6E1F93FF2420A64400C70687 /* Malayalam MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Malayalam MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1F94032420A64400C70687 /* Malayalam_MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malayalam_MusicTests.swift; sourceTree = "<group>"; };
+		6E1F94052420A64400C70687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1F940A2420A64400C70687 /* Malayalam MusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Malayalam MusicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1F940E2420A64400C70687 /* Malayalam_MusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malayalam_MusicUITests.swift; sourceTree = "<group>"; };
+		6E1F94102420A64400C70687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1F941C2420CBCE00C70687 /* musicdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = musicdata.json; sourceTree = "<group>"; };
+		6E1F941E2420D08E00C70687 /* MusicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E1F93E72420A64300C70687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F93FC2420A64400C70687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F94072420A64400C70687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E1F93E12420A64300C70687 = {
+			isa = PBXGroup;
+			children = (
+				6E1F93EC2420A64300C70687 /* Malayalam Music */,
+				6E1F94022420A64400C70687 /* Malayalam MusicTests */,
+				6E1F940D2420A64400C70687 /* Malayalam MusicUITests */,
+				6E1F93EB2420A64300C70687 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E1F93EB2420A64300C70687 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F93EA2420A64300C70687 /* Malayalam Music.app */,
+				6E1F93FF2420A64400C70687 /* Malayalam MusicTests.xctest */,
+				6E1F940A2420A64400C70687 /* Malayalam MusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E1F93EC2420A64300C70687 /* Malayalam Music */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F93ED2420A64300C70687 /* AppDelegate.swift */,
+				6E1F93EF2420A64300C70687 /* ViewController.swift */,
+				6E1F93F42420A64400C70687 /* Assets.xcassets */,
+				6E1F941C2420CBCE00C70687 /* musicdata.json */,
+				6E1F93F62420A64400C70687 /* Main.storyboard */,
+				6E1F93F92420A64400C70687 /* Info.plist */,
+				6E1F93FA2420A64400C70687 /* Malayalam_Music.entitlements */,
+				6E1F93F12420A64300C70687 /* Malayalam_Music.xcdatamodeld */,
+				6E1F941E2420D08E00C70687 /* MusicCellView.swift */,
+			);
+			path = "Malayalam Music";
+			sourceTree = "<group>";
+		};
+		6E1F94022420A64400C70687 /* Malayalam MusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F94032420A64400C70687 /* Malayalam_MusicTests.swift */,
+				6E1F94052420A64400C70687 /* Info.plist */,
+			);
+			path = "Malayalam MusicTests";
+			sourceTree = "<group>";
+		};
+		6E1F940D2420A64400C70687 /* Malayalam MusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F940E2420A64400C70687 /* Malayalam_MusicUITests.swift */,
+				6E1F94102420A64400C70687 /* Info.plist */,
+			);
+			path = "Malayalam MusicUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E1F93E92420A64300C70687 /* Malayalam Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1F94132420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam Music" */;
+			buildPhases = (
+				6E1F93E62420A64300C70687 /* Sources */,
+				6E1F93E72420A64300C70687 /* Frameworks */,
+				6E1F93E82420A64300C70687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Malayalam Music";
+			productName = "Malayalam Music";
+			productReference = 6E1F93EA2420A64300C70687 /* Malayalam Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E1F93FE2420A64400C70687 /* Malayalam MusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1F94162420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam MusicTests" */;
+			buildPhases = (
+				6E1F93FB2420A64400C70687 /* Sources */,
+				6E1F93FC2420A64400C70687 /* Frameworks */,
+				6E1F93FD2420A64400C70687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E1F94012420A64400C70687 /* PBXTargetDependency */,
+			);
+			name = "Malayalam MusicTests";
+			productName = "Malayalam MusicTests";
+			productReference = 6E1F93FF2420A64400C70687 /* Malayalam MusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E1F94092420A64400C70687 /* Malayalam MusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1F94192420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam MusicUITests" */;
+			buildPhases = (
+				6E1F94062420A64400C70687 /* Sources */,
+				6E1F94072420A64400C70687 /* Frameworks */,
+				6E1F94082420A64400C70687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E1F940C2420A64400C70687 /* PBXTargetDependency */,
+			);
+			name = "Malayalam MusicUITests";
+			productName = "Malayalam MusicUITests";
+			productReference = 6E1F940A2420A64400C70687 /* Malayalam MusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E1F93E22420A64300C70687 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = qburst;
+				TargetAttributes = {
+					6E1F93E92420A64300C70687 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					6E1F93FE2420A64400C70687 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E1F93E92420A64300C70687;
+					};
+					6E1F94092420A64400C70687 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E1F93E92420A64300C70687;
+					};
+				};
+			};
+			buildConfigurationList = 6E1F93E52420A64300C70687 /* Build configuration list for PBXProject "Malayalam Music" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E1F93E12420A64300C70687;
+			productRefGroup = 6E1F93EB2420A64300C70687 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E1F93E92420A64300C70687 /* Malayalam Music */,
+				6E1F93FE2420A64400C70687 /* Malayalam MusicTests */,
+				6E1F94092420A64400C70687 /* Malayalam MusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E1F93E82420A64300C70687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F93F52420A64400C70687 /* Assets.xcassets in Resources */,
+				6E1F941D2420CBCF00C70687 /* musicdata.json in Resources */,
+				6E1F93F82420A64400C70687 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F93FD2420A64400C70687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F94082420A64400C70687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E1F93E62420A64300C70687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F93F02420A64300C70687 /* ViewController.swift in Sources */,
+				6E1F93F32420A64300C70687 /* Malayalam_Music.xcdatamodeld in Sources */,
+				6E1F941F2420D08E00C70687 /* MusicCellView.swift in Sources */,
+				6E1F93EE2420A64300C70687 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F93FB2420A64400C70687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F94042420A64400C70687 /* Malayalam_MusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F94062420A64400C70687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F940F2420A64400C70687 /* Malayalam_MusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E1F94012420A64400C70687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E1F93E92420A64300C70687 /* Malayalam Music */;
+			targetProxy = 6E1F94002420A64400C70687 /* PBXContainerItemProxy */;
+		};
+		6E1F940C2420A64400C70687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E1F93E92420A64300C70687 /* Malayalam Music */;
+			targetProxy = 6E1F940B2420A64400C70687 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E1F93F62420A64400C70687 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E1F93F72420A64400C70687 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E1F94112420A64400C70687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E1F94122420A64400C70687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6E1F94142420A64400C70687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Malayalam Music/Malayalam_Music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6E1F94152420A64400C70687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Malayalam Music/Malayalam_Music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6E1F94172420A64400C70687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam MusicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-MusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Malayalam Music.app/Contents/MacOS/Malayalam Music";
+			};
+			name = Debug;
+		};
+		6E1F94182420A64400C70687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam MusicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-MusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Malayalam Music.app/Contents/MacOS/Malayalam Music";
+			};
+			name = Release;
+		};
+		6E1F941A2420A64400C70687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam MusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-MusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Malayalam Music";
+			};
+			name = Debug;
+		};
+		6E1F941B2420A64400C70687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Malayalam MusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qburst.music.Malayalam-MusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Malayalam Music";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E1F93E52420A64300C70687 /* Build configuration list for PBXProject "Malayalam Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F94112420A64400C70687 /* Debug */,
+				6E1F94122420A64400C70687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1F94132420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F94142420A64400C70687 /* Debug */,
+				6E1F94152420A64400C70687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1F94162420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam MusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F94172420A64400C70687 /* Debug */,
+				6E1F94182420A64400C70687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1F94192420A64400C70687 /* Build configuration list for PBXNativeTarget "Malayalam MusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F941A2420A64400C70687 /* Debug */,
+				6E1F941B2420A64400C70687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E1F93F12420A64300C70687 /* Malayalam_Music.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E1F93F22420A64300C70687 /* Malayalam_Music.xcdatamodel */,
+			);
+			currentVersion = 6E1F93F22420A64300C70687 /* Malayalam_Music.xcdatamodel */;
+			path = Malayalam_Music.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6E1F93E22420A64300C70687 /* Project object */;
+}
