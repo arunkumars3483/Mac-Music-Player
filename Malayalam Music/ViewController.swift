@@ -51,11 +51,26 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
         musicTableView.doubleAction = #selector(handleDoubleClick)
         
+        NotificationCenter.default.addObserver(forName: Notification.Name.init(rawValue: "play"), object: nil, queue: nil) { (notification) in
+            self.playButtonClicked(self.playButton)
+        }
 
+        NotificationCenter.default.addObserver(forName: Notification.Name.init(rawValue: "pause"), object: nil, queue: nil) { (notification) in
+            self.pauseButtonClicked(self.pauseButton)
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name.init(rawValue: "next"), object: nil, queue: nil) { (notification) in
+            self.nextMusic()
+        }
+        
     }
     
     override func viewWillAppear() {
         playMusic(url: "https://mallusongsdownload.info" + (self.musicfiles[currentIndex]["url"] as! String))
+    }
+    
+    func nextMusic(){
+        playerDidFinishPlaying()
     }
     
     func playMusic(url: String){

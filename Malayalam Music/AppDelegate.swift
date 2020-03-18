@@ -15,8 +15,32 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        
+    }
+    
+    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
+        let menu = NSMenu()
+
+        menu.addItem(NSMenuItem(title: "Play", action: #selector(AppDelegate.playMusic), keyEquivalent: "P"))
+        menu.addItem(NSMenuItem(title: "Pause", action: #selector(AppDelegate.pauseMusic), keyEquivalent: "p"))
+        menu.addItem(NSMenuItem(title: "Next", action: #selector(AppDelegate.nextMusic), keyEquivalent: "n"))
+
+        return menu
     }
 
+    @objc func playMusic(){
+        NotificationCenter.default.post(name: Notification.Name.init(rawValue: "play"), object: nil)
+    }
+    
+    @objc func pauseMusic(){
+        NotificationCenter.default.post(name: Notification.Name.init(rawValue: "pause"), object: nil)
+    }
+    
+    @objc func nextMusic(){
+        NotificationCenter.default.post(name: Notification.Name.init(rawValue: "next"), object: nil)
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
